@@ -1,5 +1,5 @@
-import 'package:firebase_auth_rest/firebase_auth_rest.dart';
-import 'package:firedart/auth/exceptions.dart';
+import 'package:firebase_auth_rest_2/firebase_auth_rest.dart';
+import 'package:firedart_2/auth/exceptions.dart';
 import 'package:http/http.dart';
 
 import 'firestore_gateway.dart';
@@ -72,7 +72,7 @@ class Firestore {
   }
 
   Future<void> signOut() async {
-    firebaseAccount?.dispose();
+    await firebaseAccount?.dispose();
     firebaseAccount = null;
     client?.close();
     client = null;

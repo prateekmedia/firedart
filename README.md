@@ -28,7 +28,7 @@ You'll also need to go to your `Firebase Console`, open `Project Settings` and u
 ### Usage
 
 ``` dart
-import 'package:firedart/firedart.dart';
+import 'package:firedart_2/firedart.dart';
 ```
 
 `FirebaseAuth` has a singleton version which should be enough for most use cases. You'll need to initialise it with your API key and a token store (see note above):
@@ -47,7 +47,7 @@ await firebaseAuth.signIn(email, password);
 var user = await firebaseAuth.getUser();
 ```
 
-Further usage examples can be found in the [integration tests](https://github.com/cachapa/firedart/blob/master/test/firebase_auth_test.dart).
+Further usage examples can be found in the [integration tests](https://github.com/cachapa/firedart_2/blob/master/test/firebase_auth_test.dart).
 
 ### Limitations
 
@@ -60,7 +60,7 @@ The `Firestore` class is a basic implementation of the service's RPC interface. 
 ### Usage
 
 ``` dart
-import 'package:firedart/firedart.dart';
+import 'package:firedart_2/firedart.dart';
 ```
 
 As with `FirebaseAuth`, `Firestore` offers a singleton version that needs to be initialised with your `Project ID`, which you can find under `Project Settings` -> `General`:
@@ -82,7 +82,7 @@ var map = await firestore.collection("users").get();
 var users = UserCollection.fromMap(map);
 ```
 
-Further usage examples can be found in the [integration tests](https://github.com/cachapa/firedart/blob/master/test/firestore_test.dart).
+Further usage examples can be found in the [integration tests](https://github.com/cachapa/firedart_2/blob/master/test/firestore_test.dart).
 
 ### Limitations
 
@@ -114,4 +114,4 @@ var firebaseAuth = FirebaseAuth(apiKey, await PreferencesStore(), httpClient: cl
 
 ## Securing Tokens
 
-If you're running your code in an environment that requires securing access tokens, you can extend `TokenStore` to persist data in a secure maner, e.g. by encrypting the data or storing it in an external vault. Example implementations can be found in [token_store.dart](https://github.com/cachapa/firedart/blob/master/lib/auth/token_store.dart).
+If you're running your code in an environment that requires securing access tokens, you can extend `TokenStore` to persist data in a secure maner, e.g. by encrypting the data or storing it in an external vault. Example implementations can be found in [token_store.dart](https://github.com/cachapa/firedart_2/blob/master/lib/auth/token_store.dart).

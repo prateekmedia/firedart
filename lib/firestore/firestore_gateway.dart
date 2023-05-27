@@ -1,10 +1,11 @@
 import 'dart:async';
 
-import 'package:firebase_auth_rest/firebase_auth_rest.dart';
-import 'package:firedart/generated/google/firestore/v1/common.pb.dart';
-import 'package:firedart/generated/google/firestore/v1/document.pb.dart' as fs;
-import 'package:firedart/generated/google/firestore/v1/firestore.pbgrpc.dart';
-import 'package:firedart/generated/google/firestore/v1/query.pb.dart';
+import 'package:firebase_auth_rest_2/firebase_auth_rest.dart';
+import 'package:firedart_2/generated/google/firestore/v1/common.pb.dart';
+import 'package:firedart_2/generated/google/firestore/v1/document.pb.dart'
+    as fs;
+import 'package:firedart_2/generated/google/firestore/v1/firestore.pbgrpc.dart';
+import 'package:firedart_2/generated/google/firestore/v1/query.pb.dart';
 import 'package:grpc/grpc.dart';
 
 import '../firedart.dart';

@@ -1,4 +1,4 @@
-import 'package:firedart/firedart.dart';
+import 'package:firedart_2/firedart.dart';
 import 'package:universal_io/io.dart';
 
 const apiKey = 'Project Settings -> General -> Web API Key';

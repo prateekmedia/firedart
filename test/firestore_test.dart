@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:firebase_auth_rest/firebase_auth_rest.dart';
-import 'package:firedart/firedart.dart';
+import 'package:firebase_auth_rest_2/firebase_auth_rest.dart';
+import 'package:firedart_2/firedart.dart';
 import 'package:http/http.dart';
 import 'package:test/test.dart';
 
-import 'test_config.dart';
+import '../example/main.dart';
 
 Future main() async {
   var client = Client();

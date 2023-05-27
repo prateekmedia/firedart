@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:firebase_auth_rest/firebase_auth_rest.dart';
-import 'package:firedart/auth/client.dart';
+import 'package:firebase_auth_rest_2/firebase_auth_rest.dart';
+import 'package:firedart_2/auth/client.dart';
 
 import 'user_gateway.dart';
 
