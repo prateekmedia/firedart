@@ -1,3 +1,8 @@
+## [1.0.0] - 27 May 2023.
+
+* Fix for Dart 3
+* This now uses firebase rest api and changes syntax
+
 ## [0.9.0+1] - 07 April 2021.
 
 * Migrate code to NNBD
